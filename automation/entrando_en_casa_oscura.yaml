@@ -1,0 +1,27 @@
+alias: 'Entrando en casa (oscura)'
+trigger:
+  platform: state
+  entity_id: group.familia
+  from: 'not_home'
+  to: 'home'
+condition:
+  - condition: and
+    conditions:
+        - condition: numeric_state
+          entity_id: sensor.fibaro_system_fgms001_motion_sensor_luminance_2
+          below: 15
+        - condition: numeric_state
+          entity_id: sensor.sensorluz_3_0
+          below: 10
+  - condition: state
+    entity_id: input_boolean.entrarsalirdecasa
+    state: 'on'
+  - condition: or
+    conditions:
+      - condition: time
+        after: '16:00'
+      - condition: time
+        before: '04:00'
+action:
+  service: scene.turn_on
+  entity_id: scene.EntradaEnCasa

@@ -1,0 +1,10 @@
+name: 'Pinchito'
+entities:
+  light.mesitadani:
+    state: off
+  light.mesitaana:
+    state: off
+  light.tiraled_6_0:
+    state: on
+    rgb_color: [0, 0, 254]
+    brightness: 150

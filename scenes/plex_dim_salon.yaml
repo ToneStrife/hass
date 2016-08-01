@@ -1,0 +1,16 @@
+name: 'DimSalon'
+entities:
+  light.sofa:
+    state: off
+    transition: 2
+  light.mueble:
+    state: on
+    rgb_color: [55, 56, 254]
+    color_temp: 500
+    transition: 2
+    brightness: 10
+  light.tiraled_2_0:
+    state: on
+    rgb_color: [0, 0, 200]
+    brightness: 15
+    transition: 2

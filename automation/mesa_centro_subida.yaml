@@ -1,0 +1,20 @@
+alias: 'Subida Mesita Comedor'
+trigger:
+  platform: state
+  entity_id: binary_sensor.contacto_10_0
+  to: 'on'
+condition:
+  - condition: state
+    entity_id: light.mueble
+    state: 'on'
+  - condition: state
+    entity_id: input_boolean.lucesmesitacomedor
+    state: 'on'
+  - condition: state
+    entity_id: sun.sun
+    state: 'below_horizon'
+  - condition: time
+    after: '20:00'
+action:
+  service: scene.turn_on
+  entity_id: scene.SubeLucesComedor

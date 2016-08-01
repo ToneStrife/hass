@@ -1,0 +1,19 @@
+name: 'PausaSalon'
+entities:
+  light.sofa:
+    state: on
+    rgb_color: [254, 254, 254]
+    color_temp: 154
+    transition: 2
+    brightness: 50
+  light.mueble:
+    state: on
+    rgb_color: [254, 254, 254]
+    color_temp: 154
+    transition: 2
+    brightness: 150
+  light.tiraled_2_0:
+    state: on
+    rgb_color: [182, 224, 254]
+    brightness: 150
+    transition: 2

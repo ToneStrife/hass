@@ -1,0 +1,14 @@
+alias: 'Enciende Despacho'
+trigger:
+  platform: state
+  entity_id: sensor.mini_despacho
+  from: 'OFF'
+  to: 'ON'
+condition:
+  condition: numeric_state
+  entity_id: sun.sun
+  value_template: '{{ state.attributes.elevation }}'
+  below: 6
+action:
+  - service: scene.turn_on
+    entity_id: scene.DespiertaDespacho

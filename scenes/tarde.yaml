@@ -1,0 +1,30 @@
+name: 'Tarde'
+entities:
+  light.sofa:
+    state: on
+    rgb_color: [254, 254, 254]
+    color_temp: 154
+    brightness: 254
+    transition: 30
+  light.mueble:
+    state: on
+    rgb_color: [254, 254, 254]
+    color_temp: 154
+    brightness: 254
+    transition: 30
+  light.tiraled_2_0:
+    state: on
+    rgb_color: [254, 254, 254]
+    brightness: 254
+  light.mesitadani:
+    state: on
+    brightness: 80
+    transition: 30
+  light.mesitaana:
+    state: on
+    brightness: 80
+    transition: 30
+  light.tiraled_6_0:
+    state: on
+    brightness: 100
+    rgb_color: [254, 155, 0]

@@ -1,0 +1,18 @@
+despcuarto:
+  initial: on
+luztarde:
+  initial: on
+lucesplex:
+  initial: on
+entrarsalirdecasa:
+  initial: on
+entrarsalircuarto:
+  initial: on
+lucesmesitacomedor:
+  initial: on
+luzcocina:
+  initial: on
+anallegacasa:
+  initial: off
+vacaciones:
+  initial: off

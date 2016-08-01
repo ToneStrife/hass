@@ -1,0 +1,27 @@
+input_boolean.despcuarto:
+  friendly_name: 'Despertador Cuarto'
+  icon: 'mdi:clock'
+input_boolean.luztarde:
+  friendly_name: 'Luces Tarde'
+  icon: 'mdi:clock'
+input_boolean.lucesplex:
+  friendly_name: 'Dimmer Salon'
+  icon: 'mdi:play-circle-outline'
+input_boolean.entrarsalirdecasa:
+  friendly_name: 'Entrar/Salir de casa'
+  icon: 'mdi:walk'
+input_boolean.entrarsalircuarto:
+  friendly_name: 'Luces cuarto'
+  icon: 'mdi:walk'
+input_boolean.lucesmesitacomedor:
+  friendly_name: 'Sub/Baj. Luces Mesa'
+  icon: 'mdi:lightbulb-outline'
+input_boolean.luzcocina:
+  friendly_name: 'Luz Cocina'
+  icon: 'mdi:lightbulb-outline'
+input_boolean.anallegacasa:
+  friendly_name: 'Ana llega a casa'
+  icon: 'mdi:human-female'
+input_boolean.vacaciones:
+  friendly_name: 'Vacas/Fuera de casa'
+  icon: 'mdi:airplane-takeoff'

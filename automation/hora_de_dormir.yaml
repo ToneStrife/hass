@@ -1,0 +1,15 @@
+alias: 'Hora de dormir'
+trigger:
+  platform: state
+  entity_id: sensor.harmony
+  to: 'OFF'
+condition:
+  condition: or
+  conditions:
+    - condition: time
+      after: '22:00'
+    - condition: time
+      before: '04:00'
+action:
+  service: scene.turn_on
+  entity_id: scene.horadedormir

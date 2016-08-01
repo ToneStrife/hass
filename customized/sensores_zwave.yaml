@@ -1,0 +1,12 @@
+# Sensores ZWAVE
+# sensor.fibaro_system_fgms001_motion_sensor_luminance_2:
+#   friendly_name: 'Lux Cuarto'
+#   icon: 'mdi:lightbulb-outline'
+# sensor.fibaro_system_fgms001_motion_sensor_temperature_2:
+#   friendly_name: 'Temp. Cuarto'
+#   icon: 'mdi:temperature-celsius'
+# binary_sensor.fibaro_system_fgms001_motion_sensor_sensor_2:
+#   friendly_name: 'Movim. Cuarto'
+#   icon: 'mdi:walk'
+# sensor.fibaro_system_fgms001_motion_sensor_general_2:
+#   hidden: true

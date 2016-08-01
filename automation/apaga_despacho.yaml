@@ -1,0 +1,12 @@
+alias: 'Apaga Despacho'
+trigger:
+  platform: state
+  entity_id: sensor.mini_despacho
+  to: 'OFF'
+condition:
+  condition: state
+  entity_id: light.lampara_del_despacho
+  state: 'on'
+action:
+  service: scene.turn_on
+  entity_id: scene.apagadespacho

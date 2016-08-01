@@ -1,0 +1,10 @@
+- platform: mqtt
+  devices:
+    dani_iphone: 'hass/dani/localizacion'
+    ana_s5: 'hass/ana/localizacion'
+#- platform: owntracks
+# - platform: icloud
+#   username: !secret icloud_user_dani
+#   password: !secret icloud_pass_dani
+  # name: DaNi
+  # interval: 50

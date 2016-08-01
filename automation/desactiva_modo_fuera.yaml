@@ -1,0 +1,16 @@
+alias: 'Modo fuera de casa apagado'
+trigger:
+  platform: state
+  entity_id: input_boolean.vacaciones
+  to: 'off'
+action:
+  - service: homeassistant.turn_on
+    entity_id: input_boolean.despcuarto
+  - service: homeassistant.turn_on
+    entity_id: input_boolean.lucesplex
+  - service: homeassistant.turn_on
+    entity_id: input_boolean.entrarsalircuarto
+  - service: homeassistant.turn_on
+    entity_id: input_boolean.lucesmesitacomedor
+  - service: homeassistant.turn_on
+    entity_id: input_boolean.luzcocina

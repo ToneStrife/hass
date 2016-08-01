@@ -1,0 +1,27 @@
+alias: 'Saliendo de la cocina'
+trigger:
+  platform: state
+  entity_id: binary_sensor.movimiento9_9_0
+  state: 'off'
+  for:
+    seconds: 30
+condition:
+  - condition: state
+    entity_id: light.led_dimmer_12_0
+    state: 'on'
+  - condition: numeric_state
+    entity_id: sun.sun
+    value_template: '{{ state.attributes.elevation }}'
+    below: 6
+  - condition: state
+    entity_id: group.familia
+    state: 'home'
+  - condition: time
+    #before: '06:35'
+    after: '21:30'
+  - condition: state
+    entity_id: input_boolean.luzcocina
+    state: 'on'
+action:
+  service: light.turn_off
+  entity_id: light.led_dimmer_12_0

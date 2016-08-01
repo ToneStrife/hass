@@ -1,0 +1,13 @@
+- platform: mqtt
+  state_topic: 'harmony-api/current_activity'
+  name: 'Harmony'
+  value_template: "{% if value == 'ver-tv' %}TV{% elif value == 'htpc' %}PLEX{% elif value =='radio' %}RADIO{% elif value =='satelite' %}SAT.{% elif value =='poweroff' %}OFF{% endif %}"
+- platform: mqtt
+  state_topic: 'hass/despacho/mini'
+  name: "Mini Despacho"
+# - platform: template
+#   sensors:
+#     elevacion:
+#       value_template: '{{ states.sun.sun.attributes.elevation }}'
+#       friendly_name: 'Elevacion'
+#       unit_of_measurement: 'º'

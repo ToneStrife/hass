@@ -1,0 +1,18 @@
+alias: 'Apaga el LED del baño'
+trigger:
+  - platform: state
+    entity_id: binary_sensor.contacto3_3_0
+    state: 'off'
+    for:
+      seconds: 15
+condition:
+  - condition: state
+    entity_id: light.multisensor_13_4
+    state: 'on'
+  - condition: numeric_state
+    entity_id: sensor.multisensor_13_1
+    below: 40
+    above: 10
+action:
+  service: light.turn_off
+  entity_id: light.multisensor_13_4

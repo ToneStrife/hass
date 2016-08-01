@@ -1,0 +1,18 @@
+alias: 'Saliendo por la tarde'
+trigger:
+  platform: state
+  entity_id: group.familia
+  from: 'home'
+  to: 'not_home'
+condition:
+  - condition: state
+    entity_id: group.all_lights
+    state: 'on'
+  - condition: time
+    after: '17:00'
+  - condition: state
+    entity_id: input_boolean.entrarsalirdecasa
+    state: 'on'
+action:
+  service: scene.turn_on
+  entity_id: scene.noche

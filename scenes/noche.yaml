@@ -1,0 +1,28 @@
+name: 'Noche'
+entities:
+  light.sofa:
+    state: on
+    rgb_color: [254, 254, 254]
+    color_temp: 154
+    brightness: 75
+  light.mueble:
+    state: on
+    rgb_color: [254, 254, 254]
+    color_temp: 154
+    brightness: 75
+  light.mesitadani:
+    state: on
+    brightness: 50
+  light.mesitaana:
+    state: on
+    brightness: 50
+  light.lampara_del_despacho:
+    state: off
+  light.tiraled_2_0:
+    state: on
+    rgb_color: [182, 224, 254]
+    brightness: 50
+  light.tiraled_6_0:
+    state: on
+    rgb_color: [254, 155, 0]
+    brightness: 150

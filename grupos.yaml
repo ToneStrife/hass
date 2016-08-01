@@ -1,0 +1,75 @@
+Familia:
+  entities:
+    - device_tracker.dani_iphone
+    - device_tracker.ana_s5
+Luces:
+  entities:
+    - light.sofa
+    - light.mueble
+    - light.tiraled_2_0
+    - light.mesitadani
+    - light.mesitaana
+    - light.tiraled_6_0
+    - light.led_dimmer_12_0
+    - light.lampara_del_despacho
+    - light.multisensor_13_4
+Multimedia:
+  entities:
+    - sensor.harmony
+    - media_player.mini
+    - switch.tv_salon
+    - switch.plex
+    - switch.radio
+    - sensor.mini_despacho
+    - camera.camara_salon
+Mov./Apert.:
+  entities:
+#    - binary_sensor.fibaro_system_fgms001_motion_sensor_sensor_2
+    - binary_sensor.movimiento7_7_0
+    - binary_sensor.movimiento8_8_0
+    - binary_sensor.movimiento9_9_0
+    - binary_sensor.puertaentrada_1_0
+    - binary_sensor.contacto_10_0
+    - binary_sensor.contacto3_3_0
+# Temp-Humedad:
+#   entities:
+# #    - sensor.fibaro_system_fgms001_motion_sensor_temperature_2
+#     - sensor.temperature_sensor_11_0
+#     - sensor.temperature_sensor_11_1
+Lux:
+  entities:
+#    - sensor.fibaro_system_fgms001_motion_sensor_luminance_2
+    - sensor.multisensor_13_1
+Exterior:
+  entities:
+    - sun.sun
+Escenas:
+  entities:
+    - scene.despiertasalon
+    - scene.despiertacuarto
+    - scene.enciende_cocina
+    - scene.tarde
+    - scene.noche
+    - scene.dimsalon
+    - scene.apagar
+    - scene.pinchito
+Scenes:
+  view: yes
+  icon: 'mdi:lightbulb'
+  entities: group.escenas
+Reglas:
+  entities:
+    - input_boolean.despcuarto
+    - input_select.alarma_cuarto
+    - input_boolean.luztarde
+    - input_boolean.entrarsalirdecasa
+    - input_boolean.lucesplex
+    - input_boolean.entrarsalircuarto
+    - input_boolean.lucesmesitacomedor
+    - input_boolean.luzcocina
+    - input_boolean.anallegacasa
+    - input_boolean.vacaciones
+Rules:
+  view: yes
+  icon: 'mdi:settings'
+  entities: group.reglas

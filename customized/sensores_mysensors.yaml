@@ -1,0 +1,37 @@
+# Sensores MYSENSORS
+# sensor.multisensor_13_3:
+#   friendly_name: 'Humedad Baño'
+#   icon: 'mdi:water-percent'
+# sensor.multisensor_13_2:
+#   friendly_name: 'Temp. Baño'
+#   icon: 'mdi:temperature-celsius'
+binary_sensor.movimiento8_8_0:
+  friendly_name: 'Movim. Cuarto'
+  icon: 'mdi:walk'
+binary_sensor.puertaentrada_1_0:
+  friendly_name: 'Puerta'
+  icon: 'mdi:glassdoor'
+binary_sensor.micropuerta_1_3:
+  friendly_name: 'Contacto Puerta'
+  icon: 'mdi:glassdoor'
+binary_sensor.contacto3_3_0:
+  friendly_name: 'Puerta Baño'
+  icon: 'mdi:glassdoor'
+binary_sensor.contacto_10_0:
+  friendly_name: 'Mesa Centro'
+  icon: 'mdi:format-wrap-top-bottom'
+binary_sensor.movimiento7_7_0:
+  friendly_name: 'Movim. Comedor'
+  icon: 'mdi:walk'
+sensor.multisensor_13_1:
+  friendly_name: 'Lux Baño'
+  icon: 'mdi:lightbulb-outline'
+sensor.temperature_sensor_11_0:
+  friendly_name: 'Temp. Nevera'
+  icon: 'mdi:fridge-filled-top'
+sensor.temperature_sensor_11_1:
+  friendly_name: 'Temp. Congelador'
+  icon: 'mdi:fridge-filled-bottom'
+binary_sensor.movimiento9_9_0:
+  friendly_name: 'Movim. Cocina'
+  icon: 'mdi:walk'

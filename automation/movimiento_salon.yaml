@@ -1,0 +1,21 @@
+alias: 'Movimiento -> Enciende lampara del salon'
+trigger:
+  platform: state
+  entity_id: binary_sensor.movimiento7_7_0
+  to: 'on'
+condition:
+  - condition: state
+    entity_id: light.sofa
+    state: 'off'
+  - condition: state
+    entity_id: sensor.harmony
+    state: 'OFF'
+  - condition: or
+    conditions:
+      - condition: time
+        after: '23:00'
+      - condition: time
+        before: '06:35'
+action:
+  service: homeassistant.turn_on
+  entity_id: script.timed_lamp

@@ -1,0 +1,21 @@
+alias: 'Luces Tarde'
+trigger:
+  platform: numeric_state
+  entity_id: sun.sun
+  value_template: '{{ state.attributes.elevation }}'
+  below: 9
+condition:
+  - condition: state
+    entity_id: input_boolean.luztarde
+    state: 'on'
+  - condition: time
+    weekday:
+      - mon
+      - tue
+      - wed
+      - thu
+      - fri
+action:
+  service: scene.turn_on
+  data_template:
+      entity_id: "{%if states.group.familia.state == 'home' %}scene.tarde{% else %}scene.tarde{% endif %}"

@@ -1,0 +1,19 @@
+alias: 'Entrando en el Baño'
+trigger:
+  platform: state
+  entity_id: binary_sensor.contacto3_3_0
+  #from: 'off'
+  to: 'on'
+condition:
+  - condition: numeric_state
+    entity_id: sensor.multisensor_13_1
+    below: 15
+  - condition: state
+    entity_id: light.multisensor_13_4
+    state: 'off'
+action:
+  service: light.turn_on
+  entity_id: light.multisensor_13_4
+  data:
+    brightness: 254
+    rgb_color: [254, 254, 254]

@@ -1,0 +1,4 @@
+- name: notifica
+  platform: pushover
+  api_key: !secret apikey
+  user_key: !secret userkey

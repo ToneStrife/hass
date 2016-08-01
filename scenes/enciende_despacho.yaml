@@ -1,0 +1,8 @@
+name: 'DespiertaDespacho'
+entities:
+  light.lampara_del_despacho:
+    state: on
+    rgb_color: [254, 254, 254]
+    brightness: 254
+    transition: 10
+    color_temp: 154

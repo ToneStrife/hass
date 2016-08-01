@@ -1,0 +1,15 @@
+# Media Players
+media_player.iphone:
+  hidden: true
+media_player.mini:
+  friendly_name: 'Plex'
+media_player.mini_2:
+  hidden: true
+media_player.danipad:
+  hidden: true
+media_player.despacho:
+  hidden: true
+media_player.plex_web_safari:
+  hidden: true
+media_player.rasplex:
+  hidden: true

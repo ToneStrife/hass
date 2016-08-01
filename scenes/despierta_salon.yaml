@@ -1,0 +1,18 @@
+name: 'DespiertaSalon'
+entities:
+  light.sofa:
+    state: on
+    rgb_color: [254, 254, 254]
+    color_temp: 154
+    brightness: 254
+    transition: 60
+  light.mueble:
+    state: on
+    rgb_color: [254, 254, 254]
+    color_temp: 154
+    brightness: 254
+    transition: 60
+  light.tiraled_2_0:
+    state: on
+    rgb_color: [182, 224, 254]
+    brightness: 254

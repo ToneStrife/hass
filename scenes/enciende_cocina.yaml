@@ -1,0 +1,5 @@
+name: 'Enciende Cocina'
+entities:
+  light.led_dimmer_12_0:
+    state: on
+    brightness: 255

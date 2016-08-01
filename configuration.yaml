@@ -1,0 +1,59 @@
+homeassistant:
+  name: Casa
+  temperature_unit: C
+  time_zone: Europe/Madrid
+  latitude: 39.431591
+  longitude: -0.412215
+  elevation: 20
+  customize: !include_dir_merge_named customized
+
+http: !include config/httpconfig.yaml
+
+zone: !include zones.yaml
+
+#zwave: !include zwave.yaml
+
+mqtt: !include mqtt.yaml
+
+switch: !include switch.yaml
+
+sensor: !include sensor.yaml
+
+mysensors: !include mysensors.yaml
+
+shell_command: !include shell_command.yaml
+
+input_boolean: !include input_boolean.yaml
+
+input_select: !include input_select.yaml
+
+notify: !include config/pushovercfg.yaml
+
+device_tracker: !include device_tracker.yaml
+
+light: !include light.yaml
+
+media_player: !include media_player.yaml
+
+group: !include grupos.yaml
+
+scene: !include_dir_list scenes
+
+automation: !include_dir_list automation
+
+script: !include scripts.yaml
+
+camera: !include camara.yaml
+
+frontend:
+
+sun:
+
+history:
+
+# recorder:
+#   purge_days: 7
+
+logbook:
+
+updater:

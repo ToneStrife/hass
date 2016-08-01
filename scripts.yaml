@@ -1,0 +1,79 @@
+apagaluces:
+  alias: 'Apagar luces'
+  sequence:
+    - service: light.turn_off
+      data:
+        entity_id: group.all_lights
+        transition: 30
+timed_lamp:
+  alias: 'Enciende la lampara del Salon y pone el temporizador'
+  sequence:
+    # Cancel ev. old timers
+    - service: script.turn_off
+      data:
+         entity_id: script.timer_off
+    - service: light.turn_on
+      data:
+        entity_id: light.mueble
+        brightness: 150
+        rgb_color: [254, 254, 254]
+        color_temp: 154
+        transition: 2
+    - service: light.turn_on
+      data:
+        entity_id: light.tiraled_2_0
+        brightness: 150
+        rgb_color: [254, 254, 254]
+    # Set new timer
+    - service: script.turn_on
+      data:
+        entity_id: script.timer_off
+timer_off:
+  alias: 'Apaga la lampara del salon despues de 1 minuto'
+  sequence:
+    - delay:
+        minutes: 1
+    - service: light.turn_off
+      data:
+        entity_id: light.mueble
+        transition: 10
+    - service: light.turn_off
+      data:
+        entity_id: light.tiraled_2_0
+buscagente:
+  alias: 'Buscando gente que entre/salga'
+  sequence:
+    - service: shell_command.busca_gente
+    - delay:
+        minutes: 1
+    - service: shell_command.busca_gente
+    - delay:
+        minutes: 3
+    - service: shell_command.busca_gente
+    - delay:
+        minutes: 5
+    - service: shell_command.busca_gente
+    - delay:
+        minutes: 5
+    - service: shell_command.busca_gente
+
+# lampcuartotemporizada:
+#   alias: 'Luz cuarto temporizada'
+#   sequence:
+#     - service: script.turn_off
+#       data:
+#         entity_id: script.timercuarto_off
+#     - service: scene.turn_on
+#       data:
+#         entity_id: scene.SubeLucesCuarto
+#     - service: script.turn_on
+#       data:
+#         entity_id: script.timercuarto_off
+# timercuarto_off:
+#   alias: 'Baja Luces del cuarto'
+#   sequence:
+#     - delay:
+#         minutes: 1
+#     - service: scene.turn_on
+#       data:
+#         entity_id: scene.BajaLucesCuarto

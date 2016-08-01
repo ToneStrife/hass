@@ -1,0 +1,19 @@
+name: 'BajaLucesComedor'
+entities:
+  light.sofa:
+    state: on
+    rgb_color: [254, 254, 254]
+    color_temp: 154
+    transition: 20
+    brightness: 75
+  light.mueble:
+    state: on
+    rgb_color: [254, 254, 254]
+    color_temp: 154
+    transition: 20
+    brightness: 75
+  light.tiraled_2_0:
+    state: on
+    rgb_color: [182, 224, 2544]
+    transition: 20
+    brightness: 75

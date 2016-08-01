@@ -1,0 +1,13 @@
+alias: 'Enciende Salon y cocina'
+trigger:
+  platform: time
+  after: '06:35'
+condition:
+  condition: state
+  entity_id: group.familia
+  state: 'home'
+action:
+  - service: scene.turn_on
+    entity_id: scene.despiertasalon
+  - service: scene.turn_on
+    entity_id: scene.enciende_cocina

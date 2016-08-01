@@ -1,0 +1,27 @@
+alias: 'Pausa en Salon'
+trigger:
+  platform: state
+  entity_id: media_player.mini
+  to: 'paused'
+condition:
+  - condition: state
+    entity_id: group.familia
+    state: 'home'
+  - condition: state
+    entity_id: sun.sun
+    state: 'below_horizon'
+  - condition: or
+    conditions:
+      - condition: time
+        after: '21:00'
+      - condition: time
+        before: '04:00'
+  - condition: state
+    entity_id: input_boolean.lucesplex
+    state: 'on'
+  - condition: state
+    entity_id: binary_sensor.contacto_10_0
+    state: 'off'
+action:
+  service: scene.turn_on
+  entity_id: scene.pausasalon

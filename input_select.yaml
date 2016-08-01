@@ -1,0 +1,8 @@
+alarma_cuarto:
+  name: 'Alarma Cuarto'
+  options:
+   - '06:35'
+   - '06:50'
+   - '07:00'
+  initial: '06:50'
+  icon: 'mdi:clock'

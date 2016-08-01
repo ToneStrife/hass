@@ -1,0 +1,22 @@
+alias: 'Entrando en casa'
+trigger:
+  platform: state
+  entity_id: group.familia
+  from: 'not_home'
+  to: 'home'
+condition:
+  - condition: and
+    conditions:
+      - condition: numeric_state
+        entity_id: sun.sun
+        value_template: '{{ state.attributes.elevation }}'
+        below: 6
+      - condition: state
+        entity_id: input_boolean.entrarsalirdecasa
+        state: 'on'
+      - condition: time
+        before: '04:00'
+        after: '16:00'
+action:
+  service: scene.turn_on
+  entity_id: scene.EntradaEnCasa

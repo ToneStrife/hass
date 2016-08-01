@@ -1,0 +1,41 @@
+# Escenas
+scene.despiertasalon:
+  friendly_name: 'Salon ON'
+scene.despiertacuarto:
+  friendly_name: 'Cuarto ON'
+scene.pinchito:
+  friendly_name: 'Pinchito'
+scene.DespiertaDespacho:
+  hidden: true
+scene.apagadespacho:
+  hidden: true
+scene.dimsalon:
+  friendly_name: 'Cine'
+#  hidden: true
+scene.pausasalon:
+  hidden: true
+scene.stopsalon:
+  hidden: true
+scene.tarde:
+  friendly_name: 'Tarde'
+#  hidden: true
+scene.noche:
+  friendly_name: 'Noche'
+#  hidden: true
+scene.salon_on:
+  hidden: true
+scene.apagar:
+  friendly_name: 'Apaga Todo'
+#  hidden: true
+scene.horadedormir:
+  hidden: true
+scene.EntradaEnCasa:
+  hidden: true
+scene.SubeLucesComedor:
+  hidden: true
+scene.BajaLucesComedor:
+  hidden: true
+scene.SubeLucesCuarto:
+  hidden: true
+scene.BajaLucesCuarto:
+  hidden: true

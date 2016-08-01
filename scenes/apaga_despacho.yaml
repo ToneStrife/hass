@@ -1,0 +1,5 @@
+name: 'ApagaDespacho'
+entities:
+  light.lampara_del_despacho:
+    state: off
+    transition: 30

@@ -1,0 +1,7 @@
+# Otros sensores
+sensor.harmony:
+  icon: 'mdi:television'
+sensor.mini_despacho:
+  entity_picture: /local/mini.jpg
+sensor.elevacion:
+  icon: 'mdi:vector-circle-variant'

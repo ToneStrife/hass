@@ -1,0 +1,10 @@
+alias: 'Bateria baja Fibaro FGMS001'
+trigger:
+  platform: numeric_state
+  entity_id: sensor.fibaro_system_fgms001_motion_sensor_luminance_2
+  value_template: '{{ state.attributes.battery_level }}'
+  below: 10
+action:
+  service: notify.notifica
+  data:
+    message: 'La bateria del sensor Fibaro esta baja'

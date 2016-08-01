@@ -1,0 +1,14 @@
+name: 'SubeLucesCuarto'
+entities:
+  light.mesitadani:
+    state: on
+    brightness: 254
+    transition: 1
+  light.mesitaana:
+    state: on
+    brightness: 254
+    transition: 10
+  light.tiraled_6_0:
+    state: on
+    rgb_color: [254, 155, 0]
+    brightness: 150

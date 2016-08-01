@@ -1,0 +1,21 @@
+- platform: mqtt
+  name: "TV Salon"
+  state_topic:   "harmony-api/activities/ver-tv/state"
+  command_topic: "harmony-api/activities/ver-tv/command"
+  qos: 0
+  payload_on: "on"
+  payload_off: "off"
+- platform: mqtt
+  name: "Plex"
+  state_topic:   "harmony-api/activities/htpc/state"
+  command_topic: "harmony-api/activities/htpc/command"
+  qos: 0
+  payload_on: "on"
+  payload_off: "off"
+- platform: mqtt
+  name: "Radio"
+  state_topic:   "harmony-api/activities/radio/state"
+  command_topic: "harmony-api/activities/radio/command"
+  qos: 0
+  payload_on: "on"
+  payload_off: "off"

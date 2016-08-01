@@ -1,0 +1,16 @@
+script.salirdecasa:
+  hidden: true
+script.apagaluces:
+  hidden: true
+script.timed_lamp:
+  hidden: true
+script.timer_off:
+  hidden: true
+script.buscagente:
+  hidden: true
+script.buscagentequesale:
+  hidden: true
+script.timercuarto_off:
+  hidden: true
+script.lampcuartotemporizada:
+  hidden: true

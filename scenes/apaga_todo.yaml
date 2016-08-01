@@ -1,0 +1,24 @@
+name: 'Apagar'
+entities:
+  light.sofa:
+    state: off
+    transition: 10
+  light.mueble:
+    state: off
+    transition: 10
+  light.mesitadani:
+    state: off
+    transition: 10
+  light.lampara_del_despacho:
+    state: off
+    transition: 10
+  light.mesitaana:
+    state: off
+    transition: 10
+  light.tiraled_2_0:
+    state: off
+    transition: 10
+  light.tiraled_6_0:
+    state: off
+  light.led_dimmer_12_0:
+    state: off

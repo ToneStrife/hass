@@ -1,0 +1,18 @@
+alias: 'Vacaciones 2'
+trigger:
+  platform: time
+  after: '22:00'
+condition:
+  - condition: state
+    entity_id: group.familia
+    state: 'not_home'
+  - condition: state
+    entity_id: input_boolean.vacaciones
+    state: 'on'
+action:
+  - service: homeassistant.turn_on
+    entity_id: switch.tv_salon
+  - delay:
+      minutes: 45
+  - service: homeassistant.turn_off
+    entity_id: switch.tv_salon

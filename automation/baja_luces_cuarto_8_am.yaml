@@ -1,0 +1,24 @@
+alias: 'Baja Luces Cuarto 8:00'
+trigger:
+  platform: time
+  after: '08:00'
+condition:
+  - condition: state
+    entity_id: light.mesitaana
+    state: 'on'
+  - condition: state
+    entity_id: light.mesitadani
+    state: 'on'
+  - condition: time
+    weekday:
+      - mon
+      - tue
+      - wed
+      - thu
+      - fri
+  - condition: state
+    entity_id: input_boolean.despcuarto
+    state: 'on'
+action:
+  service: scene.turn_on
+  entity_id: scene.BajaLucesCuarto

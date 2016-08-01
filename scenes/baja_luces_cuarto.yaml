@@ -1,0 +1,14 @@
+name: 'BajaLucesCuarto'
+entities:
+  light.mesitadani:
+    state: on
+    brightness: 75
+    transition: 5
+  light.mesitaana:
+    state: on
+    brightness: 75
+    transition: 15
+  light.tiraled_6_0:
+    state: on
+    rgb_color: [254, 155, 0]
+    brightness: 50

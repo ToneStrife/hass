@@ -1,0 +1,9 @@
+# Interruptores
+switch.plex:
+  icon: 'mdi:play-circle-outline'
+switch.tv_salon:
+  icon: 'mdi:television'
+switch.satelite:
+  icon: 'mdi:satellite-variant'
+switch.radio:
+  icon: 'mdi:radio'

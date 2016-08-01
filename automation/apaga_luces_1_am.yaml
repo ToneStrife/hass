@@ -1,0 +1,11 @@
+alias: 'Apaga Luces 1 AM'
+trigger:
+  platform: time
+  after: '01:00'
+condition:
+  condition: state
+  entity_id: group.familia
+  state: 'not_home'
+action:
+  service: script.turn_on
+  entity_id: script.apagaluces

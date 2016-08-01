@@ -1,0 +1,18 @@
+alias: 'Ana llega a casa'
+trigger:
+  platform: state
+  entity_id: device_tracker.ana_s5
+  from: 'not_home'
+  to: 'home'
+condition:
+  condition: state
+  entity_id: input_boolean.anallegacasa
+  state: 'on'
+action:
+  - service: notify.notifica
+    data:
+      message: 'Ana ha llegado a casa'
+  - delay:
+      seconds: 20
+  - service: homeassistant.turn_off
+    entity_id: input_boolean.anallegacasa

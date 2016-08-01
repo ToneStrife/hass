@@ -1,0 +1,18 @@
+light.sofa:
+  friendly_name: 'Luz Sofa'
+light.mueble:
+  friendly_name: 'Luz Mueble'
+light.mesitadani:
+  friendly_name: 'Mesita Dani'
+light.mesitaana:
+  friendly_name: 'Mesita Ana'
+light.lampara_del_despacho:
+  friendly_name: 'Luz Despacho'
+light.tiraled_2_0:
+  friendly_name: 'LED Comedor'
+light.tiraled_6_0:
+  friendly_name: 'LED Cabecero'
+light.multisensor_13_4:
+  friendly_name: 'LED Baño'
+light.led_dimmer_12_0:
+  friendly_name: 'LED Cocina'
