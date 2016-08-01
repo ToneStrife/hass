@@ -14,9 +14,9 @@ condition:
   - condition: state
     entity_id: group.familia
     state: 'home'
-  - condition: time
-    before: '06:35'
-    after: '21:30'
+#  - condition: time
+#    before: '06:35'
+#    after: '21:30'
   - condition: state
     entity_id: input_boolean.luzcocina
     state: 'on'

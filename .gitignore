@@ -4,6 +4,8 @@ www
 
 *.xml
 
+buscagente.py
+
 home-assistant.db
 
 home-assistant_v2.db
