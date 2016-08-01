@@ -7,7 +7,7 @@ homeassistant:
   elevation: 20
   customize: !include_dir_merge_named customized
 
-http: !include config/httpconfig.yaml
+http: !include httpconfig.yaml
 
 zone: !include zones.yaml
 
@@ -27,7 +27,7 @@ input_boolean: !include input_boolean.yaml
 
 input_select: !include input_select.yaml
 
-notify: !include config/pushovercfg.yaml
+notify: !include notify.yaml
 
 device_tracker: !include device_tracker.yaml
 
