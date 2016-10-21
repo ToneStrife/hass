@@ -1,7 +1,7 @@
 alias: 'Despertador'
 trigger:
   platform: template
-  value_template: '{{ now.time().strftime("%H:%M") == states.input_select.alarma_cuarto.state }}'
+  value_template: '{{ states.sensor.time.state == states.input_select.alarma_cuarto.state }}'
 condition:
   - condition: time
     weekday:
