@@ -11,3 +11,6 @@
 #       value_template: '{{ states.sun.sun.attributes.elevation }}'
 #       friendly_name: 'Elevacion'
 #       unit_of_measurement: 'º'
+- platform: time_date
+  display_options:
+    - 'time'
