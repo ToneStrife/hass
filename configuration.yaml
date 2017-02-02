@@ -2,14 +2,14 @@ homeassistant:
   name: Casa
   temperature_unit: C
   time_zone: Europe/Madrid
-  latitude: 39.431591
-  longitude: -0.412215
+  latitude: !secret latit
+  longitude: !secret longit
   elevation: 20
   customize: !include_dir_merge_named customized
 
 http: !include httpconfig.yaml
 
-zone: !include zones.yaml
+#zone: !include zones.yaml
 
 #zwave: !include zwave.yaml
 
